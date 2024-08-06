@@ -84,3 +84,32 @@ console.log(names.indexOf("Samuel"));
 
 names.splice(2,1,"Emanuel");
 console.log(names);
+
+//Utilizando Slice
+let personList = ["Eduardo", "Joana", "Wallace", "Rosana"];
+let personList1 = personList.slice(1,3);
+
+console.log(personList);
+console.log(personList1);
+
+//Utilizando Concat
+let manager = ["Davi", "Manuela"];
+let company = personList.concat(manager);
+
+console.log(company);
+
+//EXERCÍCIO -> criar array com meses do ano e dividir em trimestres
+let year = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+console.log(year);
+
+let fistTrimester = year.slice(0,3);
+console.log(fistTrimester);
+
+let secondTrimester = year.slice(3,6);
+console.log(secondTrimester);
+
+let thirdTrimester = year.slice(6,9);
+console.log(thirdTrimester);
+
+let forthTrimester = year.slice(9,12);
+console.log(forthTrimester);
