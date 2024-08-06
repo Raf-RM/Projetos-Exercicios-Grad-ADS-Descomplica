@@ -46,3 +46,41 @@ console.log(list1.indexOf(9))
 
 list1.pop();
 console.log(list1)
+
+//Empregando método splice
+let list3 = [1,2,3,4,5,6,7];
+
+list3.splice(1,2);
+
+console.log(list1);
+
+let nameList = ["Maria","João","Lucas","Pedro"];
+
+let newNameList = nameList.splice(1,2,"Luiz", "Rafael");
+
+console.log(newNameList)
+console.log(nameList)
+
+let countryList = ["Brasil","Argentina","Colômbia"];
+countryList.unshift("Uruguai");
+console.log(countryList);
+
+//Exercicio: criar array com os nomes Guilherme, Manuel, Samuel, Davi, João
+//Acrescentar nome Monica
+//Retirar o último elemento do array
+//Encontrar a posição do nome Samuel
+//Trocar Manuel por Emanuel
+
+let names = ["Guilherme", "Manuel", "Samuel", "Davi", "João"];
+console.log(names);
+
+names.unshift("Monica");
+console.log(names);
+
+names.pop();
+console.log(names);
+
+console.log(names.indexOf("Samuel"));
+
+names.splice(2,1,"Emanuel");
+console.log(names);
