@@ -63,9 +63,9 @@ let produtos = [
 let produtosFiltrados = produtos.filter(
     function(valor){
         if(valor.categoria.toLowerCase() == "eletrônico"){
-            console.log(valor.descricao)
             return valor.descricao;
         }
     }
 );
 console.log(produtosFiltrados);
+
