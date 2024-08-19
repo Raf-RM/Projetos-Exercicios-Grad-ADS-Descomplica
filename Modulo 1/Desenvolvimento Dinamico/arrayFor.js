@@ -15,3 +15,15 @@ console.log(total);
 a.forEach(function(valor, indice, array){
     console.log(valor, indice, array, array[indice]);
 })
+
+var carros = [
+    {modelo: "Audi A3", marca: "Audi", ano: "2020"},
+    {modelo: "Renegade", marca: "Jeep", ano: "2022"}
+]
+for (let index in carros){
+    console.log(carros[index])
+}
+
+for (let carro of carros){
+    console.log(carro.ano)
+}
