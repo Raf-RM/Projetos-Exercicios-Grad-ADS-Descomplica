@@ -18,7 +18,7 @@
         </nav>
         <h1>Venha realizar a viagem dos seus sonhos!</h1>
     </header>
-    <section>
+    <section id="pacotes">
         <h2>Conheça nossos pacotes</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam nulla consequatur corrupti ab. Unde ipsam eaque eum similique officiis odit perferendis ipsum maiores odio ea iusto, impedit sed quasi fugit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum delectus quaerat quas expedita doloribus ipsa excepturi magnam vero quod tempore maxime, ipsam consequatur libero consectetur modi? Nihil repudiandae deleniti et! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nam nulla quis voluptatibus dolorum excepturi, commodi sit. Mollitia provident alias vel eveniet iste, quia explicabo reprehenderit minus. Nesciunt, assumenda commodi?
@@ -28,20 +28,53 @@
             <a href="http://google.com">Google</a>
             <hr>
         </p>
-        <figure>
-            <img width="600px" src="/Desenvolvimento FrontEnd/Pagina Site de Viagens/img/lauterbrunnen_-_staubbachfall.webp" alt="Imagem do Vilarejo de Lauterbrunnen">
-            <figcaption>Vilarejo de Lauterbrunnen</figcaption>
-        </figure>
-        <figure>
-            <img width="600px" src="/Desenvolvimento FrontEnd/Pagina Site de Viagens/img/St.Moritz-820x547.jpg" alt="Imagem da cidade de St. Moritz">
-            <figcaption>Cidade de St. Moritz</figcaption>
-        </figure>
+        <div class="figuras">
+            <figure>
+                <img width="300px" src="/Desenvolvimento FrontEnd/Pagina Site de Viagens/img/lauterbrunnen_-_staubbachfall.webp" alt="Imagem do Vilarejo de Lauterbrunnen">
+                <figcaption>Vilarejo de Lauterbrunnen</figcaption>
+            </figure>
+            <figure>
+                <img width="300px" src="/Desenvolvimento FrontEnd/Pagina Site de Viagens/img/St.Moritz-820x547.jpg" alt="Imagem da cidade de St. Moritz">
+                <figcaption>Cidade de St. Moritz</figcaption>
+            </figure>
+        </div>
+        <div class="videos">
+            <video width="600px" controls>
+                <source src="/Desenvolvimento FrontEnd/Pagina Site de Viagens/video/MountainVideo.mp4" type="video/mp4">
+                Seu navegador não suporta esse tipo de vídeo.
+            </video>
+        </div>
     </section>
     
-    <video width="600px" controls>
-        <source src="/Desenvolvimento FrontEnd/Pagina Site de Viagens/video/MountainVideo.mp4" type="video/mp4">
-        Seu navegador não suporta esse tipo de vídeo.
-    </video>
+    <section>
+        <h2>Taxas e serviços</h2>
+        <p>
+            Conheça nossas taxas para serviços.
+        </p>
+        <table>
+            <caption>Descrição de serviços e respectivos valores</caption>
+            <thead>
+                <tr>
+                    <th>Serviço</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Reserva de hotel</td>
+                    <td>R$ 150,00</td>
+                </tr>
+                <tr>
+                    <td>Compra de passagens</td>
+                    <td>R$ 100,00</td>
+                </tr>
+                <tr>
+                    <td>Aluguel de carros</td>
+                    <td>R$ 50,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
     <section>
         <h2>Orçamento</h2>
@@ -104,36 +137,6 @@
 
             <button>Salvar</button>
         </form>
-    </section>
-
-    <section>
-        <h2>Taxas e serviços</h2>
-        <p>
-            Conheça nossas taxas para serviços.
-        </p>
-        <table>
-            <caption>Descrição de serviços e respectivos valores</caption>
-            <thead>
-                <tr>
-                    <th>Serviço</th>
-                    <th>Valor</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Reserva de hotel</td>
-                    <td>R$ 150,00</td>
-                </tr>
-                <tr>
-                    <td>Compra de passagens</td>
-                    <td>R$ 100,00</td>
-                </tr>
-                <tr>
-                    <td>Aluguel de carros</td>
-                    <td>R$ 50,00</td>
-                </tr>
-            </tbody>
-        </table>
     </section>
 
     <br><br>
