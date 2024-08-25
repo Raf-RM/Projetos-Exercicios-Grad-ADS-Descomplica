@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <h1>Formulário de cadastro</h1>
+    <form action="" method="GET">
+        <fieldset>
+            <legend>Dados para cadastro</legend>
+            <label for="Nome">Nome</label> <br>
+            <input type="text" name="Nome"> <br><br>
+    
+            <label for="Surname">Sobrenome</label><br>
+            <input type="text" name="Surname"><br><br>
+    
+            <label for="dateOfBirth">Data de nascimento</label> <br>
+            <input type="date" name="dateOfBirth"> <br> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Email para contato</legend>
+            <label for="Email">Email</label><br>
+            <input type="email" name="Email" required><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Sobre você</legend>
+            <label for="favoriteLanguage">Linguagem de programação favorita</label><br>
+            <select name="favoriteLanguage" id="">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Javascript" >Javascript</option>
+                <option value="Python">Python</option>
+            </select> <br><br>
+            <label for="Message">Deixe uma mensagem</label> <br>
+            <textarea name="Message" id="" rows="5"></textarea>
+        </fieldset><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
