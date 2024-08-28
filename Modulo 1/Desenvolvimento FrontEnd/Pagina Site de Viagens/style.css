@@ -29,29 +29,6 @@ section h2{
     font-weight: 600;
 }
 
-nav li a{
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-}
-
-nav{
-    font-size: 12px;
-    letter-spacing: 4px;
-    height: 50px;
-    background-color: #f56d44;
-    padding-right: 40px;
-}
-
-nav li {
-    float: right;
-}
-
-nav ul {
-    float: right;
-    list-style: none;
-}
-
 table {
     width: 100%;
 }
@@ -72,13 +49,5 @@ table tr:nth-child(even){
 
 table tr:nth-child(odd){
     background-color: #bdbdbd;
-}
-
-#pacotes .figuras, #pacotes .videos{
-    text-align: center;
-}
-
-#pacotes .figuras figure{
-    display: inline-block;
 }
 
