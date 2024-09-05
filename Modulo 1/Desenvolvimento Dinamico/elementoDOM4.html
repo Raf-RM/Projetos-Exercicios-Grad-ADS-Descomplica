@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento DOM exemplo 4</title>
+</head>
+<body>
+    <h1>Usando seletor DOM</h1>
+    <ul>
+        <li>Java</li>
+        <li>Python</li>
+        <li>NodeJS</li>
+    </ul>
+
+    <div id="conteudo" name="divconteudo" class="mensagem">
+
+    </div>
+
+    <div name="divconteudo" class="mensagem">
+
+    </div>
+
+    <div name="divconteudo" class="mensagem">
+
+    </div>
+
+    <span id="novospan" class="novo">Texto Span</span>
+
+    <div class="mensagem">
+
+    </div>
+
+</body>
+<script>
+    let elemento0 = document.getElementsByTagName("li")[0];
+    elemento0.style.color = "blue";
+
+    let elemento1 = document.getElementsByTagName("li")[1];
+    elemento1.style.background = "green"
+
+    let elemento2 = document.getElementsByTagName("li")[2];
+    elemento2.innerText = "Javascript"
+
+    let elementoDiv = document.getElementById("conteudo");
+    elementoDiv.innerHTML = "<p> Adicionado tag p dentro da div </p>"
+
+    let elementoDivName = document.getElementsByName("divconteudo")[1];
+    elementoDivName.style.color = "red";
+    elementoDivName.innerText = "Adicionando texto na segunda div";
+
+    let elementoDivClass = document.getElementsByClassName("mensagem")[2];
+    elementoDivClass.innerHTML = "<h2> Terceira div - Add elemento HTML </h2>"
+
+    let elementoSpanClass = document.querySelector("span.novo");
+    elementoSpanClass.style.color = "red";
+
+    let elementoSeletor = document.querySelectorAll(".mensagem")[3];
+    elementoSeletor.innerHTML = "<p> Incluindo texto na div com index 3 </p>"; 
+</script>
+</html>
