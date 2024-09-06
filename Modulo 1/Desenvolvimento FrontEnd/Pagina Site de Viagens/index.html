@@ -1,181 +1,220 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dream Trip</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dream Trip</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="container-fluid p-2 bg-warning text-center">
-        <nav class="navbar navbar-expand-lg bg-warning">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Dream Trip</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end bg-warning" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Pacotes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Taxas</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Contato
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-          <div id="carouselExampleCaptions" class="carousel slide">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/carousel/img3.avif" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Entre mares e montanhas</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/carousel/img4.avif" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>De norte a sul</h5>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="img/carousel/img5.avif" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Venha conhecer</h5>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-    </header>
-    <section class="container-fluid bg-light text-center p-2">
-        <h2>Conheça nossos pacotes</h2>
-        <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam nulla consequatur corrupti ab. 
-            Unde ipsam eaque eum similique officiis odit perferendis ipsum maiores odio ea iusto, impedit sed quasi 
-            fugit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum delectus quaerat quas expedita 
-            doloribus ipsa excepturi magnam vero quod tempore maxime, ipsam consequatur libero consectetur modi? 
-            Nihil repudiandae deleniti et! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Dicta nam nulla quis voluptatibus dolorum excepturi, commodi sit. 
-            Mollitia provident alias vel eveniet iste, quia explicabo reprehenderit minus. 
-            Nesciunt, assumenda commodi?
-            <br>
-            <br>
-            <br>
-        </p>
-        <div class="row">
-            <figure class="col text-center">
-                <img width="300px" src="/Desenvolvimento FrontEnd/Pagina Site de Viagens/img/lauterbrunnen_-_staubbachfall.webp" alt="Imagem do Vilarejo de Lauterbrunnen">
-                <figcaption>Vilarejo de Lauterbrunnen</figcaption>
-            </figure>
-            <figure class="col text-center">
-                <img width="300px" src="/Desenvolvimento FrontEnd/Pagina Site de Viagens/img/St.Moritz-820x547.jpg" alt="Imagem da cidade de St. Moritz">
-                <figcaption>Cidade de St. Moritz</figcaption>
-            </figure>
+  <header class="container-fluid p-2 bg-warning text-center">
+    <nav class="navbar navbar-expand-lg bg-warning">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Dream Trip</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end bg-warning" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Pacotes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Taxas</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Contato
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-    </section>
-    
-    <section class="container-fluid bg-warning text-center p-2">
-        <h2>Taxas e serviços</h2>
-        <p>
-            Conheça nossas taxas para serviços.
-        </p>
-        <table class="table table-warning table-striped table-hover table-bordered border-warning">
-            <caption class="text-center" >Descrição de serviços e respectivos valores</caption>
-            <thead class="table-secondary">
-                <tr>
-                    <th>Serviço</th>
-                    <th>Valor</th>
-                </tr>
-            </thead>
-            <tbody class="table-group-divider">
-                <tr>
-                    <td>Reserva de hotel</td>
-                    <td>R$ 150,00</td>
-                </tr>
-                <tr>
-                    <td>Compra de passagens</td>
-                    <td>R$ 100,00</td>
-                </tr>
-                <tr>
-                    <td>Aluguel de carros</td>
-                    <td>R$ 50,00</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+      </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/carousel/img3.avif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Entre mares e montanhas</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/carousel/img4.avif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>De norte a sul</h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/carousel/img5.avif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Venha conhecer</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </header>
+  <section class="container-fluid bg-light text-center p-2">
+    <h2>Conheça nossos pacotes</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/lauterbrunnen_-_staubbachfall.webp" class="card-img-top" alt="...">
+          <div class="card-body bg-warning">
+            <h5 class="card-title">Lauterbrunnen</h5>
+            <h1 class="card-subtitle text-muted">R$ 5.000,00</h1>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Reservar</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Em até 24x</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/St.Moritz-820x547.jpg" class="card-img-top" alt="...">
+          <div class="card-body bg-warning">
+            <h5 class="card-title">St.Moritz</h5>
+            <h1 class="card-subtitle text-muted">R$ 4.600,00</h1>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            <a href="#" class="btn btn-primary">Reservar</a>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Em até 24x</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="img/interlaken.jpg" class="card-img-top" alt="...">
+          <div class="card-body bg-warning">
+            <h5 class="card-title">Interlaken</h5>
+            <h1 class="card-subtitle text-muted">R$ 6.000,00</h1>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Reservar</a>
+            </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Em até 24x</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section class="container-fluid bg-light p-2">
-        <h2 class="text-center">Faça já seu orçamento!</h2>
-        <form action="" method="GET">
-            <fieldset>
-                <legend>Dados da viagem</legend>
-                <div class="mb-3">
-                    <label class="form-label" for="nome">Nome</label>
-                    <input type="text" class="form-control" name="nome" id="nome">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="email">Email</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="meuemail@provedor.dominio" required>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="dataIda">Data de ida</label>
-                    <input type="date" class="form-control" name="dataIda" id="dataIda">
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="dataRetorno">Data de retorno</label>
-                    <input type="date" class="form-control" name="dataRetorno" id="dataRetorno">
-                </div>
-            </fieldset>
+  <section class="container-fluid bg-warning text-center p-2">
+    <h2>Taxas e serviços</h2>
+    <p>
+      Conheça nossas taxas para serviços.
+    </p>
+    <table class="table table-warning table-striped table-hover table-bordered border-warning">
+      <caption class="text-center">Descrição de serviços e respectivos valores</caption>
+      <thead class="table-secondary">
+        <tr>
+          <th>Serviço</th>
+          <th>Valor</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+        <tr>
+          <td>Reserva de hotel</td>
+          <td>R$ 150,00</td>
+        </tr>
+        <tr>
+          <td>Compra de passagens</td>
+          <td>R$ 100,00</td>
+        </tr>
+        <tr>
+          <td>Aluguel de carros</td>
+          <td>R$ 50,00</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-            <fieldset>
-                <legend>Quais serviços deseja contratar?</legend>
-                <div class="form-check">
-                    <label class="form-check-label" for="passagens">Compra de passagens</label>                    
-                    <input type="checkbox" class="form-check-input" name="passagens" id="passagens" value="Passagens">
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label" for="hospedagem">Reserva de hospedagem</label>
-                    <input class="form-check-input" type="checkbox" name="hospedagem" id="hospedagem" value="Hospedagem">
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label" for="veículo">Reserva de veículos</label>
-                    <input class="form-check-input" type="checkbox" name="veículo" id="veículo" value="Veículo">
-                </div>
-            </fieldset>
-            <br>
-            <button class="btn btn-secondary ">Salvar</button>
-        </form>
-    </section>
-        
-    <footer class="container-fluid bg-warning text-center">
-            Criado por Rafael Rodrigues Mateus ©
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <section class="container-fluid bg-light p-2">
+    <h2 class="text-center">Faça já seu orçamento!</h2>
+    <form action="" method="GET">
+      <fieldset>
+        <legend>Dados da viagem</legend>
+        <div class="mb-3">
+          <label class="form-label" for="nome">Nome</label>
+          <input type="text" class="form-control" name="nome" id="nome">
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="email">Email</label>
+          <input type="email" class="form-control" name="email" id="email" placeholder="meuemail@provedor.dominio"
+            required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="dataIda">Data de ida</label>
+          <input type="date" class="form-control" name="dataIda" id="dataIda">
+        </div>
+        <div class="mb-3">
+          <label class="form-label" for="dataRetorno">Data de retorno</label>
+          <input type="date" class="form-control" name="dataRetorno" id="dataRetorno">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Quais serviços deseja contratar?</legend>
+        <div class="form-check">
+          <label class="form-check-label" for="passagens">Compra de passagens</label>
+          <input type="checkbox" class="form-check-input" name="passagens" id="passagens" value="Passagens">
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="hospedagem">Reserva de hospedagem</label>
+          <input class="form-check-input" type="checkbox" name="hospedagem" id="hospedagem" value="Hospedagem">
+        </div>
+        <div class="form-check">
+          <label class="form-check-label" for="veículo">Reserva de veículos</label>
+          <input class="form-check-input" type="checkbox" name="veículo" id="veículo" value="Veículo">
+        </div>
+      </fieldset>
+      <br>
+      <button class="btn btn-secondary ">Salvar</button>
+    </form>
+  </section>
+
+  <footer class="container-fluid bg-warning text-center">
+    Criado por Rafael Rodrigues Mateus ©
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
