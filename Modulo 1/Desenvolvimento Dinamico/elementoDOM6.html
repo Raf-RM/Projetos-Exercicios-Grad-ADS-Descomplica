@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DOM 6 - Criando elemento dinamicamente</title>
+</head>
+<body>
+    <ul id="lista">
+
+    </ul>
+</body>
+<script>
+    var elemento = document.createElement("div");
+    elemento.innerText = "Incluindo texto dentro da div!";
+    elemento.style.backgroundColor = "lightgreen";
+    document.body.append(elemento);
+
+    var lista = document.getElementById("lista");
+    var li = document.createElement("li");
+    li.textContent = "Item 1";
+    lista.appendChild(li);
+
+</script>
+</html>
