@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="listaUl">
+
+    </ul>
+    
+</body>
+<script>
+    let listaTimes = ["Minnesota Vikings", "Greenbay Packers", "Detroit Lions", "Chicago Bears"];
+    
+    let listaUl = document.querySelector(".listaUl");
+    
+    for(i = 0 ; i < listaTimes.length; i++){
+        let time = document.createElement("li");
+        time.textContent = listaTimes[i];
+        time.style.border = "1px solid blue";
+        listaUl.appendChild(time);
+    }
+
+
+</script>
+</html> 

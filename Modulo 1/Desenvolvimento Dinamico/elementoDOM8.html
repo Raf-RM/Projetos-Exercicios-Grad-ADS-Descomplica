@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemento DOM 8</title>
+</head>
+<body>
+
+    <p>Clique no botão!</p>
+    <form action="">
+        <input type="button" onclick="exemploEvento()" value="Clique Aqui">
+    </form>
+
+    <h1 id="exemplo" onmouseover="passarMousePorCima()" onmouseout="passarTirarMouseCima()">Cadê?</h1>
+
+</body>
+<script>
+    function exemploEvento(){
+        alert("mostrando o alert")
+    }
+
+    function passarMousePorCima(){
+        document.getElementById("exemplo").innerHTML = "ACHOU!!";
+    }
+
+    function passarTirarMouseCima(){
+        document.getElementById("exemplo").innerHTML = "Cadê?";
+    }
+</script>
+</html>
