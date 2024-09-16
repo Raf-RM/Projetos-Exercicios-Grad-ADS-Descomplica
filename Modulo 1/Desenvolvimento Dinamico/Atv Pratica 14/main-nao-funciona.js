@@ -36,33 +36,43 @@ class Desenvolvedor extends Funcionario {
 }
 
 const listEmployees = document.getElementById("listEmployees");
-var employee = [];
 
-function newEmployeeRegister(employee) {
+function addNewEmployee() {
     var firstName = document.forms["newRegister"]["firstName"].value
     var lastName = document.forms["newRegister"]["lastName"].value;
     var age = document.forms["newRegister"]["age"].value;
     var position = document.forms["newRegister"]["position"].value;
     var department = document.forms["newRegister"]["department"].value;
     var language = document.forms["newRegister"]["language"].value;
-    employee = [firstName, lastName, age, position];
+    var employee = [firstName, lastName, age, position];
 
     if(position == "Gerente"){
         employee.push(department)
+        var func0 = new Gerente(firstName, age, position, department)
     }else if(position == "Desenvolvedor"){
         employee.push(language)
     }
 
-    alert(employee[3])
-    return employee[0] = firstName, employee[1] = lastName, employee[2] = age, employee[3] = position, employee[4]
+   var newLi = `
+        <li class="list-group-item d-flex justify-content-between lh-sm" id="employee${listEmployees.children.length}" >
+            <div>
+                <h6 class="my-0">${firstName}</h6>
+                <small class="text-body-secondary">${position}</small>
+                <span class="badge bg-danger rounded-pill">Inativo</span>
+                
+            </div>
+            <div>
+                <span class="btn btn-primary">Trabalhar</span>
+                <span class="btn btn-success" onclick='apresentar(employee)'>Apresentar</span>
+            </div>
+        </li>
+    `
+    listEmployees.innerHTML += newLi
+    event.preventDefault();
+
+    return employee
 }
 
-
-if(employee){
+function apresentar(employee){
     alert(employee)
-    if(employee[3] == "Gerente"){
-        alert("gerente")
-    }else if(employee[3] == "Desenvolvedor"){
-        alert("desenvolvedor")
-    }
 }
