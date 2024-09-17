@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+
+<body>
+    <h1>Formulário de Informações</h1>
+
+    <form id="userForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="age">Idade:</label>
+        <input type="number" id="age" name="age"><br><br>
+
+        <button type="button" onclick="submitForm()">Enviar</button>
+    </form>
+
+    <script>
+        // Definição da classe
+        class User {
+            constructor(name, email, age) {
+                this.name = name;
+                this.email = email;
+                this.age = age;
+
+            }
+
+            // Método para exibir informações do usuário
+            displayInfo() {
+                alert(`Nome: ${this.name}, Email: ${this.email}, Idade: ${this.age}`);
+            }
+        }
+
+        // Função que será chamada ao clicar no botão
+        function submitForm() {
+            // Pegando as informações do formulário
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const age = document.getElementById('age').value;
+
+            // Criando um objeto com as informações
+            const formData = {
+                name: name,
+                email: email,
+                age: age
+            };
+
+            // Criando uma instância da classe User com os dados do formulário
+            const user = new User(formData.name, formData.email, formData.age);
+
+            // Exibindo as informações
+            user.displayInfo();
+        }
+        
+    </script>
+</body>
+
+</html>

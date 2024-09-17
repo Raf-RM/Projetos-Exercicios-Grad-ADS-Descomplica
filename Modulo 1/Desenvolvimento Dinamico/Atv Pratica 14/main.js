@@ -10,16 +10,6 @@ class Funcionario {
 
     trabalhar() {
         alert(`${this.nome} está trabalhando`)
-        var status =  document.getElementById("status");
-
-        if(status.classList.contains("bg-danger")){
-            status.classList.replace("bg-danger", "bg-success");
-            status.innerHTML = "Ativo";
-        }else{
-            status.classList.replace("bg-success", "bg-danger")
-            status.innerHTML = "Inativo";
-        }
-       
     }
 }
 
@@ -57,15 +47,19 @@ function addNewEmployee() {
 
     var func;
 
-    if(position == "Gerente"){
+    if(name == ""){
+        throw new Error("Erro! PCampos marcados com asterísco são obrigatórios.")
+    }
+
+    if (position == "Gerente") {
         func = new Gerente(name, age, position, department)
-    }else if(position == "Desenvolvedor"){
+    } else if (position == "Desenvolvedor") {
         func = new Desenvolvedor(name, age, position, language)
     }
 
     employees.push(func)
 
-   var newLi = `
+    var newLi = `
         <li class="list-group-item d-flex justify-content-between lh-sm" id="employee${listEmployees.children.length}" >
             <div>
                 <h6 class="my-0">${func.nome}</h6>
@@ -79,6 +73,37 @@ function addNewEmployee() {
             </div>
         </li>
     `
+
+    if (position == "Gerente") {
+        newLi = `
+        <li class="list-group-item d-flex justify-content-between lh-sm" id="employee${listEmployees.children.length}" >
+            <div>
+                <h6 class="my-0">${func.nome}</h6>
+                <small class="text-body-secondary">${func.cargo}</small>                
+            </div>
+            <div>
+                <span class="btn btn-primary" onclick="employees[${employees.length - 1}].gerenciar()">Gerenciar</span>
+                <span class="btn btn-primary" onclick="employees[${employees.length - 1}].trabalhar()">Trabalhar</span>
+                <span class="btn btn-success" onclick="employees[${employees.length - 1}].seApresentar()">Apresentar</span>
+            </div>
+        </li>
+        `
+    } else if (position == "Desenvolvedor") {
+        newLi = `
+        <li class="list-group-item d-flex justify-content-between lh-sm" id="employee${listEmployees.children.length}" >
+            <div>
+                <h6 class="my-0">${func.nome}</h6>
+                <small class="text-body-secondary">${func.cargo}</small>                
+            </div>
+            <div>
+                <span class="btn btn-primary" onclick="employees[${employees.length - 1}].programar()">Gerenciar</span>
+                <span class="btn btn-primary" onclick="employees[${employees.length - 1}].trabalhar()">Trabalhar</span>
+                <span class="btn btn-success" onclick="employees[${employees.length - 1}].seApresentar()">Apresentar</span>
+            </div>
+        </li>
+        `
+    }
+
     listEmployees.innerHTML += newLi
     event.preventDefault();
 }
