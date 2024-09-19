@@ -50,7 +50,7 @@ function addNewEmployee() {
     try{
 
         if(name == "" || age =="" || position == "" ){
-            throw new Error("Erro! Campos marcados com asterísco são obrigatórios.")   
+            exibirErro() 
         }
 
         if (position == "Gerente") {
@@ -114,3 +114,6 @@ function addNewEmployee() {
     event.preventDefault();
 }
 
+function exibirErro(){
+    throw new Error("Erro! Campos marcados com asterísco são obrigatórios.")
+}
