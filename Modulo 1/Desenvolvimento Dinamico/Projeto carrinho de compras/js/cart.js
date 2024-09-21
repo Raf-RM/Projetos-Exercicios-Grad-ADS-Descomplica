@@ -125,7 +125,6 @@ function atualizaSubtotal(){
 }
 
 function removerProduto(item){
-    alert("AQUI!")
     let carrinhoHTML = document.getElementById("carrinho");
     let produto = document.getElementById("produto"+item);
     if(confirm("Você tem certeza que deseja excluir o produto?")){
